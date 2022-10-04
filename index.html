@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-neutral-50">
+    <head>
+        <title>Koala's Personas Project</title>
+        <!-- import javascript variables and functions -->
+        <script src="app.js" defer></script>
+        <!-- import CSS styles -->
+        <!-- <link rel="stylesheet" href="styles.css" />  -->
+        <!-- STENCIL "STARTER" CODE WAS COPIED FROM THE WEBDEV 3 LAB, AND COMPLETELY MODIFIED. SOME REMNANTS *MIGHT* STILL BE HERE BUT PROBABLY NOT -->
+        <!-- import tailwind for stying -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <!-- page content goes into <body> -->
+    <body>
+        <div id="koalaproject">
+            <div
+                id="main"
+                class="flex flex-col items-center text-neutral-800 min-h-screen"
+            >
+                <div
+                    id="name"
+                    class="h-20 border-b-2 w-full font-bold text-2xl font-mono flex items-center justify-center"
+                >
+                    <p
+                        class="font-bold text-3xl text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-pink-600"
+                    >
+                        thoughtfulkoala666
+                    </p>
+                </div>
+                <div id="hero" class="flex justify-center flex-col">
+                    <h1
+                        class="font-bold text-4xl md:text-6xl xl:text-8xl pt-6 text-center"
+                    >
+                        Personas & Storyboarding
+                    </h1>
+
+                    <h4 class="text-2xl text-center font-semibold pt-4">
+                        Analyzing the Interface of a Commercial Washing Machine
+                        at Brown University
+                    </h4>
+                </div>
+                <div class="p-4"></div>
+                <img src="./P1-3.png" class="w-3/4 shadow-lg">
+                <p class="text-neutral-400 pt-4 text-lg w-3/4 text-center">Commercial washing machines are used to launder a high volume of clothes very consistently over their lifespan. Traditional washers typically are ran much less frequently and are used by only a few individuals each.</p>
+                <div class="p-10"></div>
+                <h2 class="text-6xl font-bold text-center" id="observations-and-interviews">Observations & Interviews</h2>
+                <div id="observations" class="text-2xl w-full flex flex-col justify-center items-center">
+                  <div class="p-2"></div>
+                  <h2 class="m-auto w-3/4 text-center">
+                    In order to assess the quality of the interface, people
+                    were observed using the washing machine and the following observations were recorded for each user:
+                  </h2>
+                  <div class="p-2"></div>
+                  <div id="observations-row-1" class="flex flex-col items-center sm:items-start sm:flex-row space-x-5 w-5/6 justify-center ">
+                    
+                    <div class="bg-neutral-100 drop-shadow-lg p-6 rounded-lg   w-full sm:w-1/3">
+                      <h4 class="text-center font-bold text-2xl">User 1</h4>
+                      <div class="p-1"></div>
+                      <ul class="list-disc text-lg">
+                        <li>Carefully separated out light/dark clothing using the top shelf of the machine</li>
+                        <li>Poured both a detergent & a fabric softener into the liquid tray of the machine</li>
+                        <li>Changed each setting of the machine: Soil level, Cycle, Temp (was the only observed user that did this)</li>
+                        <li>Waited for 30 seconds after pressing "start," watched the machine, and left when the chamber began to spin</li>
+                      </ul>
+                    </div>
+
+                    <div class="bg-neutral-100 drop-shadow-lg p-6 rounded-lg   w-full sm:w-1/3">
+                      <h4 class="text-center font-bold text-2xl">User 2</h4>
+                      <div class="p-1"></div>
+                      <ul class="list-disc text-lg">
+                        <li>Instead of a liquid detergent, placed two tide-pods directly in the chamber along with the clothing</li>
+                        <li>Filled machine to the brim with clothing and had difficulty closing the door (did not separate clothes into diff piles)</li>
+                        <li>Did not change any settings on the machine, immediately pressed "start" button after loading clothing</li>
+                        <li>After their cycle was complete, ran fingers along the inner rubber skirt and found a sock that had been caught and compressed (not easily visible)</li>
+     
+                      </ul>
+                    </div>
+
+                    <div class="bg-neutral-100 drop-shadow-lg p-6 rounded-lg   w-full sm:w-1/3">
+                      <h4 class="text-center font-bold text-2xl">User 3</h4>
+                      
+                      <div class="p-1"></div>
+                      <ul class="list-disc text-lg">
+                        <li>Did not separate clothing- dumped clothes from laundry bag directly into machine</li>
+                        <li>Poured detergent into the wrong slot of the liquid tray, poured a second helping of the liquid into the correct slot immediately afterward</li>
+                        <li>Used phone to set a timer equaling the time of the machine cycle</li>
+                      </ul>
+                    </div>
+
+
+                  </div>
+
+                  <div class="p-8"></div>
+                </div>
+                <div id="questions" class="text-2xl w-full flex flex-col justify-center items-center">
+                    <h2 class="m-auto w-3/4 text-center">
+                        After the observations were made and people finished using the machines, the users were asked to answer the following questions:
+                    </h2>
+                    <p class="text-sm italic">(Summarized answers included below each question)</p>
+                   
+                    <div class="p-8"></div>
+                    <div
+                        id="question-container-master"
+                        class="flex flex-col justify-center text-center px-6  text-xl"
+                    >
+                    <div id="question-row-1" class="flex flex-col items-center sm:items-start sm:flex-row justify-around gap-x-8 gap-y-4">
+                      <div class="w-1/3 flex flex-col items-center">
+                          <h3 class="font-bold text-3xl">Question 1</h3>
+                          <div class="p-1"></div>
+                          <p class="w-5/6">
+                              On a scale of 1-5, where 1 is very easy and 5 is very difficult, how easy was it to use the washing machine?
+                          </p>
+                          <p class="w-full text-lg p-2 mt-2 italic bg-neutral-100 shadow-md rounded-xl">Users reported scores of 1 2 and 3. Users that reported a lower difficulty reported that they have more experience with commercial washers.</p>
+                      </div>
+                      <div class="w-1/3 flex flex-col items-center">
+                        <h3 class="font-bold text-3xl">Question 2</h3>
+                        <div class="p-1"></div>
+                        <p class="w-5/6">Did the settings you selected on the console make the machine perform like you expected it to?</p>
+                        <p class="w-full text-lg p-2 mt-2 italic bg-neutral-100 shadow-md rounded-xl">General consensus of understanding or at the very least complacency- both users who fine-tuned settings and users who utilized default settings were satisfied with the outcome of the machine.</p>
+                        <!-- <p class="w-5/6 italic text-sm">Very Enjoyable, Enjoyable, Indifferent, Not Enjoyable, Very Unenjoyable</p> -->
+                      </div>
+                      <div class="w-1/3 flex flex-col items-center">
+                        <h3 class="font-bold text-3xl">Question 3</h3>
+                        <div class="p-1"></div>
+                        <p class="w-5/6">How has your previous experience, if any, with other washing machines affected your ability to use this washing machine?</p>
+                        <p class="w-full text-lg p-2 mt-2 italic bg-neutral-100 shadow-md rounded-xl">Large disparity among answers: one user had done laundry themselves for the first time using a commercial washer, while another was accustomed to a household washer with more settings. User that was more accustomed to household washer perceived settings to have a greater impact on the result than other users.</p>
+                      </div>
+                  </div>
+                  <div class="p-2 sm:p-6"></div>
+                  <div id="question-row-2" class="flex flex-col sm:flex-row justify-around items-start gap-x-8 gap-y-4">
+                    <div class="w-1/3 flex flex-col items-center">
+                      <h3 class="font-bold text-3xl">Question 4</h3>
+                      <div class="p-1"></div>
+                      <p class="w-5/6">What was the most confusing/frustrating part of using the washing machine?</p>
+                      <p class="w-full text-lg p-2 mt-2 italic bg-neutral-100 shadow-md rounded-xl">Two of the users mentioned large gap in understanding between the available temperature settings, and the practical implications of how it affects the wash cycle.</p>
+                    </div>
+                    <div class="w-1/3 flex flex-col items-center">
+                      <h3 class="font-bold text-3xl">Question 5</h3>
+                      <div class="p-1"></div>
+                      <p class="w-5/6">What, if anything, would you change about the washing machine?</p>
+                      <p class="w-full text-lg p-2 mt-2 italic bg-neutral-100 shadow-md rounded-xl">Users generally reported a desire for a larger chamber to wash more clothes at once. For less experienced users, there was an expressed desire to have basic instructions mapping settings (like temperature) to practical ramifications to the washing cycle.</p>
+                      
+                    </div>
+                </div>
+                <div class="p-2 sm:p-6"></div>
+                <!-- <div id="question-response-summaries" class="pb-5">
+                  <h3 class="text-3xl font-semibold">Summarized Question Responses:</h3>
+                  <div class="p-2"></div>
+                  <div><h2>Question 1:</h2><p>...</p></div>
+                  <div class="p-2"></div>
+                  <div><h2>Q1:</h2><p>...</p></div>
+                  <div class="p-2"></div>
+                  <div><h2>Q1:</h2><p>...</p></div>
+                  <div class="p-2"></div>
+                  <div><h2>Q1:</h2><p>...</p></div>
+                  <div class="p-2"></div>
+                  <div><h2>Q1:</h2><p>...</p></div>
+                  <div class="p-2"></div>
+                </div> -->
+                      </div>
+                    </div>
+                </div>
+                        <div class="p-2 sm:p-6"></div>
+                <!-- <div class="p-2"></div> -->
+                <div
+                    id="transition1"
+                    class="h-36 bg-gradient-to-b w-full from-neutral-50 to-blue-500"
+                >
+                    <!-- <p>test paragraph</p> -->
+                </div>
+                <div id="part1" class="w-full bg-blue-500 text-white">
+                  <div class="p-4"></div>
+                  <h2 class="text-6xl font-bold text-center" id="observations-and-interviews">Empathy Maps</h2>
+                  <div class="p-2"></div>
+                  <h2 class="m-auto w-3/4 text-center text-2xl">
+                    From the user observations, two empathy-maps were created representing an archetypal character that represent part of the spectrum of users that were observed.
+                  </h2>
+
+                  <div class="p-8"></div>
+
+                  <div id="empathy-maps" class="flex flex-col items-center justify-around">
+                    <div class="flex flex-col items-center">
+                      <h3 class="text-5xl font-bold">Busy Bob</h3>
+                      <div class="p-2"></div>
+                      <img src="./P1-6.png" alt="Bob Empathy Map" class="w-2/5 shadow-2xl">
+                      <p class="text-lg w-3/5 mt-5 text-center italic font-bold">Busy Bob is a third-year student at Brown University studying Computer Science. He has 8 assignments due in the next 6 days and has run out of clean clothes.</p>
+                      <div class="p-3"></div>
+                      <p class="text-lg w-3/5 px-4 text-center">Busy Bob wants to do all of his laundry as efficiently as possible, but each machine can't fit the amount of laundry he generates between cycles. Busy Bob is representative of a large portion of the user-base of commercial washers at Brown because many students who do laundry are also very busy and can't afford to have laundry take up a large portion of their day (away from work and other obligations).</p>
+                    </div>
+                    <div class="p-8"></div>
+                    <div class="flex flex-col items-center">
+                      <h3 class="text-5xl font-bold">Meditatin' Marvin</h3>
+                      <div class="p-2"></div>
+                      <img src="./P1-7.png" alt="Bob Empathy Map" class="w-2/5 shadow-2xl">
+                      <p class="text-lg w-3/5 mt-5 text-center italic font-bold">Meditatin' Marvin is a second-year student at Brown University studying Earth Sciences and Anthropology. He is taking a break in the middle of his day to do laundry after eating lunch.</p>
+                      <div class="p-3"></div>
+                      <p class="text-lg w-3/5 px-4 text-center">Meditatin' Marvin enjoys doing laundry but is used to a more feature-rich machine, and is unsure of how the settings he knows work for his clothes at home translate to the far more limited commercial machines. He also has to wait on other machines to free up to properly split up his load. Meditatin' Marvin is representative of many students who care about properly protecting/preserving their clothes by using optimal settings, and students who use laundry as a break/escape from their academic workload.</p>
+                    </div>
+  
+                  </div>
+
+                  <div class="p-16"></div>
+                  <div
+                  id="transition1"
+                  class="h-36 bg-gradient-to-b w-full to-neutral-50 from-blue-500"
+              >
+                  <!-- <p>test paragraph</p> -->
+                  
+              </div>
+              
+              
+
+                </div>
+                <div class="p-4"></div>
+                <h2 class="text-6xl font-bold text-center" id="observations-and-interviews">Storyboard</h2>
+                <div class="p-2"></div>
+                <div class="w-full flex flex-col"><h2 class="m-auto text-xl w-3/4 text-center">
+                  A storyboard was created representing <span class="font-bold">Busy Bob's</span> interaction with the commercial washing machine interface.
+                </h2></div>
+                <div class="p-4"></div>
+                <div class="flex flex-col w-full space-y-32 justify-center items-start text-2xl ">
+                  <div class="flex justify-center items-start space-x-16">
+                    <div class="w-2/5">
+                      <img src="./sb-1.png" alt="Storyboard" class=" m-auto shadow-xl">
+                      <p class="text-center pt-6">After a long day at work, and a week of no laundry, Busy Bob walks down to the basement to do his laundry.</p>
+                    </div>
+                    <div class="w-2/5">
+                      <img src="./sb-2.png" alt="Storyboard" class=" m-auto shadow-xl">
+                      <p class="text-center pt-6">Searching for an open machine, Busy Bob takes the first machine with an open door.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-center items-start space-x-16">
+                    <div class="w-2/5">
+                      <img src="./sb-3.png" alt="Storyboard" class=" m-auto shadow-xl">
+                      <p class="text-center pt-6">Busy Bob has a deadline in 3 hours and wanting to get back upstairs quickly, hurriedly stuffs all of his clothes into the washing machine. </p>
+                    </div>
+                    <div class="w-2/5">
+                      <img src="./sb-4.png" alt="Storyboard" class=" m-auto shadow-xl">
+                      <p class="text-center pt-6">There are four slots to insert liquid, but its unclear which is actually for detergent. The text is faded and small. Instead of trying to figure out the correct slot, Busy Bob grabs some tide pods and tosses a few in with his clothes and closes the tray.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-center items-start space-x-16">
+              
+                    <div class="w-2/5">
+                      <img src="./sb-6.png" alt="Storyboard" class=" m-auto shadow-xl">
+                      <p class="text-center pt-6">Busy Bob struggles to get the door to close with all of his laundry but finally succeeds. He sets a timer for 45 minutes so he wont forget about the laundry when hyper-focused on his work.</p>
+                    </div>
+                    <div class="w-2/5">
+                      <img src="./sb-5.png" alt="Storyboard" class=" m-auto shadow-xl">
+                      <p class="text-center pt-6">Busy Bob doesn't feel the need to play around with the settings, <span class="italic">it's not like they do anything important anyway</span>. He sees the big green start button, presses it, and walks back upstairs.</p>
+                    </div>
+                  </div>
+
+
+                  <!-- <div class="flex">
+                    <img src="./sb-3.png" alt="Storyboard" class="w-2/5 m-auto shadow-xl">
+                    <img src="./sb-4.png" alt="Storyboard" class="w-2/5 m-auto shadow-xl">
+                  </div>
+                  <div class="flex">
+                    <img src="./sb-5.png" alt="Storyboard" class="w-2/5 m-auto shadow-xl">
+                    <img src="./sb-6.png" alt="Storyboard" class="w-2/5 m-auto shadow-xl">
+                  </div> -->
+                </div>
+
+
+                <div class="p-16"></div>
+                
+            </div>
+        </div>
+    </body>
+</html>
